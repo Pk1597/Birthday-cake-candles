@@ -1,0 +1,18 @@
+# defining a function birthdayCakeCandles with candles as input argument 
+def birthdayCakeCandles(candles):
+    #Initializing count=0
+    count=0
+    # calculating the maximum height using the max function
+    max_height=max(candles)
+    # Initializing the for loop to inspect each element for the max_height using if condition
+    for i in range (0,candles_count):
+        if max_height == candles[i]:
+            count=count+1
+    return count 
+#getting the input for candles_count and candles
+candles_count = int(input())
+candles = list(map(int, input().rstrip().split()))
+# assigning the output of the function to result
+result = birthdayCakeCandles(candles)
+#prinitng result
+print(result)
